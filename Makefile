@@ -58,7 +58,7 @@ lint-with-docker:  ## Lint source code with docker image of golangci-lint
 		golangci/golangci-lint:v$(GOLINT_VERSION) \
 		golangci-lint run
 
-.PHONY: lint lint-local lint-with-docker
+.PHONY: lint lint-with-local lint-with-docker
 
 # --- Utilities ----------------------------------------------------------------
 COLOUR_NORMAL = $(shell tput sgr0 2>/dev/null)
